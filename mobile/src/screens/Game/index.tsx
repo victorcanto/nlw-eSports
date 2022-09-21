@@ -4,17 +4,20 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRoute, useNavigation } from '@react-navigation/native';
 import { Entypo } from '@expo/vector-icons';
 
-import logoImg from '../../assets/logo-nlw-esports.png';
+import logoImg from '@assets/logo-nlw-esports.png';
 
-import { THEME } from '../../theme';
+import { THEME } from '@theme/index';
 import { styles } from './styles';
 
-import { GameParams } from '../../@types/navigation';
+import { GameParams } from '@globalTypes/navigation';
 
-import { Heading } from '../../components/Heading';
-import { Background } from '../../components/Background';
-import { DuoMatch } from '../../components/DuoMatch';
-import { DuoCard, DuoCardData } from '../../components/DuoCard';
+import {
+  Heading,
+  Background,
+  DuoMatch,
+  DuoCard,
+  DuoCardData,
+} from '@components/index';
 
 export function Game() {
   const [duos, setDuos] = useState<DuoCardData[]>([]);

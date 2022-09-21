@@ -3,11 +3,9 @@ import { Image, FlatList } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import logoImg from '../../assets/logo-nlw-esports.png';
+import logoImg from '@assets/logo-nlw-esports.png';
 
-import { Background } from '../../components/Background';
-import { GameCard, GameCardData } from '../../components/GameCard';
-import { Heading } from '../../components/Heading';
+import { Background, GameCard, GameCardData, Heading } from '@components/index';
 
 import { styles } from './styles';
 

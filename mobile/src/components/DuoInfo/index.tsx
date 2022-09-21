@@ -1,5 +1,5 @@
 import { ColorValue, Text, View } from 'react-native';
-import { THEME } from '../../theme';
+import { THEME } from '@theme/index';
 
 import { styles } from './styles';
 

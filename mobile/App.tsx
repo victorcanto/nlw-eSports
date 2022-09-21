@@ -10,12 +10,11 @@ import {
 import { Subscription } from 'expo-modules-core';
 import * as Notifications from 'expo-notifications';
 
-import { Background } from './src/components/Background';
-import { Loading } from './src/components/Loading';
-import { Routes } from './src/routes';
+import { Routes } from '@routes/index';
 
-import './src/services/notificationConfigs.ts';
-import { getPushNotificationToken } from './src/services/getPushNotificationToken';
+import '@services/notificationConfigs';
+import { getPushNotificationToken } from '@services/index';
+import { Background, Loading } from '@components/index';
 
 export default function App() {
   const getNotificationListener = useRef<Subscription>();

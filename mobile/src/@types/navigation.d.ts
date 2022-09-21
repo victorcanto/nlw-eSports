@@ -4,11 +4,13 @@ export interface GameParams {
   bannerUrl: string;
 }
 
+export type RootStackParamList = {
+  home: undefined;
+  game: GameParams;
+};
+
 export declare global {
   namespace ReactNavigation {
-    interface RootParamList {
-      home: undefined;
-      game: GameParams;
-    }
+    interface RootParamList extends RootStackParamList {}
   }
 }

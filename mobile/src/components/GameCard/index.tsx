@@ -9,7 +9,7 @@ import {
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { styles } from './styles';
-import { THEME } from '../../theme';
+import { THEME } from '@theme/index';
 
 export interface GameCardData {
   id: string;

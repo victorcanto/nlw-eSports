@@ -13,8 +13,8 @@ import { CheckCircle } from 'phosphor-react-native';
 import * as Clipboard from 'expo-clipboard';
 
 import { styles } from './styles';
-import { THEME } from '../../theme';
-import { Heading } from '../Heading';
+import { THEME } from '@theme/index';
+import { Heading } from '@components/Heading';
 
 interface DuoMatchProps extends ModalProps {
   discord: string;
