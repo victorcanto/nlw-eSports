@@ -1,13 +1,13 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { Home } from '../screens/Home';
-import { Game } from '../screens/Game';
+import { Game, Home } from '@screens/index';
+import { RootStackParamList } from '@globalTypes/navigation';
 
-const { Navigator, Screen } = createNativeStackNavigator();
+const { Navigator, Screen } = createNativeStackNavigator<RootStackParamList>();
 
 export function AppRoutes() {
   return (
-    <Navigator initialRouteName='home'>
+    <Navigator screenOptions={{ headerShown: false }}>
       <Screen name='home' component={Home} />
       <Screen name='game' component={Game} />
     </Navigator>
